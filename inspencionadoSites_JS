@@ -1,0 +1,41 @@
+>> https://www.netflix.com/br/ <<
+tudo o que está entre o <script> </script> deve ser interpretado como javascript.
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+é possível observar a descrição de funções nestas códigos:
+<script src="/js/main.js"></script>
+<script src="/js/cookies.js"></script>
+
+            >> https://livros.arvore.com.br/biblioteca <<
+
+  <script>
+   if (!window.fcWidget) {
+      function initFreshChat() {
+        window.fcWidget.init({
+          token: "15bcfed2-d536-4ae5-91cc-ca689d9479b5",
+          host: "https://wchat.freshchat.com"
+        });
+         window.fcWidget.user.setProperties({
+              plan: 'Sem plano', // meta propriedade 1
+              status: 'Ativo' // meta propriedade 2
+        });
+    }
+
+    tentar {
+        var int = setInterval(function() {
+              if(window.fcWidget && window.dataClient) {
+                clearInterval(int)
+                  window.fcWidget.setExternalId(window.dataClient.id)
+                  window.fcWidget.user.setFirstName(window.dataClient.name)
+                  window.fcWidget.user.setEmail(window.dataClient.email)
+                  window.fcWidget.user.setProperties({
+                        plan: window.dataClient.plan, // meta propriedade 1
+                        status: 'Ativo' // meta propriedade 2
+                  });
+              }
+        }, 1000)
+    } pegar(e) {
+
+    }
+    function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src ="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function beginCall(){initialize(document,"freshchat-js-sdk ")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+  }
+    </script>

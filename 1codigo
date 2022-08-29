@@ -1,0 +1,37 @@
+Escolhi trabalhar com o editor de código VScode por ser gratuito e funcionar em multiplas plataforma.
+Além do VScode instalei o nodejs para facilitar o desempenho do código em JS.
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu primeiro codigo</title>
+    <style>
+        body{ background-color:rgb(105, 105, 190);
+              color:blanchedalmond;
+              font: normal 16pt arial;
+        }
+        h1{
+            color:rgb(226, 230, 23);
+        }
+    </style>
+</head>
+<body>
+    <h1> olá, mundo! </h1>
+    <p>iniciando a trilha JS!</p>
+    <script>
+
+        alert('minha primeira mensagem')
+        confirm('está gostando de JS?')
+        prompt('qual seu nome?')
+        prompt('qual sua idade?')
+
+    </script>
+</body>
+</html>
+
+
+RESULTADO DO CÓDIGO:
+file:///C:/Users/DELL/Documents/curso%20js/aula04/ex001.html

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <h1>calculadora</h1>
+    primeiro número<br />
+    <input id = "n1" type="number" /><br />
+    segundo número<br />
+    <input id = "n2" type="number" /><br /> <br />
+    <button onclick= "somar()">somar</button>
+    <button onclick="subtrair()">subtrair</button>
+    <button onclick="multiplicar()">multiplicar</button>
+    <button onclick="dividir(),modulo()">dividir</button>
+    <br /> <br />
+    o resultado é : <span> </span>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var resultado = document.querySelector('span')
+        
+
+        function somar() {
+            resultado.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+        }
+        function subtrair() {
+            resultado.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+        }
+        function multiplicar() {
+            resultado.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+        }
+        function dividir(){
+           var dvs
+           dvs = (parseInt(n1.value) / parseInt(n2.value)) 
+           var modulo
+           modulo = (parseInt(n1.value) % parseInt(n2.value)) 
+           const msg = (', restou: ');
+
+            resultado.innerHTML = (dvs + msg + modulo) }
+        
+        
+    </script>
+
+
+</body>
+</html>
+
+
+consultar:
+file:///C:/Users/DELL/Documents/curso%20js/calculadora/calc.html

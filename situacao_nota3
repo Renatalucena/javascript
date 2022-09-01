@@ -1,0 +1,96 @@
+//primeiro código deve ser um programa que informa se o aluno reprovou, ou não, 
+  com base nas três notas que ele adicionou ao programa. Utilize, no mínimo, um 
+  operador de atribuição e um operador ternário. 
+
+1 º CÓDIGO:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situação acadêmica</title>
+</head>
+<body>
+    <h1>Situação acadêmica</h1>
+    primeira nota<br />
+    <input id = "n1" type="number" /><br />
+    segunda nota<br />
+    <input id = "n2" type="number" /><br /> <br />
+    terceira nota<br />
+    <input id = "n3" type="number" /><br /> <br />
+    <button onclick= "media()">Resultado</button>
+    <br /> <br />
+    Situação acadêmica : <span> </span>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var n3 = document.querySelector('#n3')
+        var resultado = document.querySelector('span')
+        
+        function media() {        
+           var soma
+           soma = (parseFloat(n1.value) + parseFloat(n2.value) + parseFloat(n3.value) ) 
+           var media
+           media = soma/3
+          var res = media > 7.00 ? 'APROVADO, parabéns pelo esforço e dedicação!' : 'REPROVADO, estude um pouco mais, bença.'
+           
+            resultado.innerHTML = (res) }
+        
+        
+    </script>
+
+
+</body>
+</html>
+
+acessar:file:///C:/Users/DELL/Documents/curso%20js/boletim/boletim_situacao.html
+
+//segundo código é um programa que o aluno deve escrever duas notas e o retorno informa a nota mínima
+  que ele deve tirar na próxima prova para poder passar com nota sete.
+
+2º CÓDIGO:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTAS</title>
+</head>
+<body>
+    <h1>NOTAS</h1>
+    primeira nota<br />
+    <input id = "n1" type="number" /><br />
+    segunda nota<br />
+    <input id = "n2" type="number" /><br /> <br />
+    <button onclick= "nota()">consultar: </button>
+    <br /> <br />
+    Nota mínima para 3ª avaliação : <span> </span>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var resultado = document.querySelector('span')
+        
+        function nota() {        
+           var soma
+           soma = (parseFloat(n1.value) + parseFloat(n2.value) ) 
+           var n3
+           n3 = (21 - soma).toFixed(2)
+          var res = soma >= 11 ? ', você consegue!' : ', tá díficil...'
+          
+           
+            resultado.innerHTML = ( n3 + res) }
+        
+        
+    </script>
+
+
+</body>
+</html>
+
+acessar:file:///C:/Users/DELL/Documents/curso%20js/boletim/nota/nota3.html

@@ -1,0 +1,8 @@
+const frase = function boasVindas(){
+    return 'Que bom ter você conosco!'
+}              
+const idadeAtual = function idadeAtual(idAtual) {
+    idade = (2022 - idAtual)
+    return `Sua idade é: ${idade}` 
+}
+const calc =  (num1,num2,op) => `resultado:` + eval(`${num1} ${op} ${num2}`);

@@ -1,0 +1,36 @@
+class  Banco {
+    constructor(conta, saldo, tipo, agencia) {
+        this.conta = conta;
+        this.saldo = saldo;
+        this.tipo = tipo;
+        this.agencia = agencia;
+    }
+
+   buscar_saldo () {
+     console.log(this.saldo)
+    }
+  
+    deposito(valor){
+        var saldo = this.saldo + valor
+        this.saldo = saldo
+        console.log(saldo)
+
+    }
+   
+    saque (valor) {
+        var saque = this.saldo - valor
+        this.saldo = saque
+        console.log(saque)
+    }
+  tipo_conta(){
+    console.log(this.tipo)
+  }
+}
+
+cliente = new Banco(1234, 130, "CC", 4321)
+cliente.buscar_saldo()
+cliente.deposito(100)
+cliente.saque(217)
+cliente.tipo_conta()
+
+// https://replit.com/@renatalucena/BothBlueDifferences#index.js

@@ -1,0 +1,15 @@
+const express = require('express')
+
+const app = express()
+
+app.use(express.json())
+//rota
+app.get('/', (request, response)=>{
+    const resultado = {mensagem:'hello word'}
+    return response.json(resultado)
+})
+
+//arrow function
+app.listen(3000, ()=>{
+    console.log('app running...')
+})
